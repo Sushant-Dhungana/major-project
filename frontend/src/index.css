@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&family=Raleway&family=Rammetto+One&display=swap');
+
+* {
+  font-family: Raleway, sans-serif;
+}
+
+body {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+.header-text {
+  color: #606080;
+  font-weight: 500;
+  margin-top: 7px;
+  font-size: 17px;
+}
+
+a.navbar-brand h2 {
+  font-size: 22px;
+    font-weight: bolder;
+    color: #4993FA;
+    font-family: Rammetto One, cursive;
+}
+
+.card-between {
+  padding-top:6%;
+  padding-bottom:6%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-between p {
+  height: 30px;
+  background-color: #c0f2c1;
+  width: 120px;
+  border-radius: 15px;
+  padding-top: 1%;
+ 
+}
+.card-between p.location {
+  height: 30px;
+  background-color: #f59898;
+  width: 120px;
+  border-radius: 15px;
+  
+}
+
+.card-text a{
+  height: 40px !important;
+  border: 1px solid #c0f2c1;
+  padding : 3%;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+}
+.card-text a:hover {
+  color: #040404;
+  background-color: #dfdee0;
+}
+
+.single-image {
+  margin-top: 40%;
+}
+
+.single-image img {
+  height: 400px;
+  width: 400px;
+  border-radius: 15px;
+}
+
+.single-content {
+  margin-top: 20%;
+  text-align: left;
+  font-weight: bold;
+  color: #040404;
+}
+.single-content p {
+  text-align: justify;
+  margin-top: 2%;
+}
+
+.price {
+  display: flex;
+  gap: 60px;
+  float: left;
+}
+.price p{
+  height: 45px;
+  width:160px;
+
+  padding-left: 10%;
+  padding-top: 2.5%;
+  background-color: #c0f2c1;
+  border-radius: 5px;
+}
+.price p.location {
+  height: 45px;
+  width:150px;
+  border-radius: 5px;
+  background-color: #f59898;
+}
+.contact-seller {
+  text-align: center;
+  margin-top: 5%;
+  color: #ffff;
+}
+
+.contact-seller button {
+  height: 50px;
+  width: 200px;
+  border-radius: 10px;
+  background-color: #4993FA;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  color: #ffff;
+}
+.contact-seller button:hover {
+  background-color: #040404;
+}
+
+.search {
+  margin-top: 6%;
+}
