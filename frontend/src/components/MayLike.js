@@ -12,6 +12,9 @@ import {
 import { ImLocation2 } from "react-icons/im";
 import bike from "../pictures/bike.png";
 import { GrFavorite } from "react-icons/gr";
+import benelli from "../pictures/benelli.webp"
+import mt from "../pictures/mt-15.jpeg"
+import cross from "../pictures/cross.webp"
 
 const MayLike = () => {
   return (
@@ -27,17 +30,17 @@ const MayLike = () => {
             <MDBCardGroup>
               <MDBCard
                 className="maylike mt-20 d-sm-flex"
-                style={{ maxWidth: "25rem" }}
+                style={{ maxWidth: "25rem", }}
               >
                 <MDBCardImage
-                  src={bike}
+                  src={benelli}
                   alt="bike image"
                   position="top"
-                  style={{ maxWidth: "100%", height: "180px" }}
+                  style={{ maxWidth: "100%", height: "300px"  }}
                 />
                 <MDBCardBody>
                   <MDBCardText className="describe text-start">
-                    Mach I (II, III, IV) Kawasaki, Ducati (Mach 1S){" "}
+                    BENELLI 302s
                   </MDBCardText>
                   <MDBCardTitle className="text-start">
                     Price:Nrs 100000
@@ -59,14 +62,14 @@ const MayLike = () => {
                 style={{ maxWidth: "25rem" }}
               >
                 <MDBCardImage
-                  src={bike}
+                  src={mt}
                   alt="bike image"
                   position="top"
-                  style={{ maxWidth: "100%", height: "180px" }}
+                  style={{ maxWidth: "100%", height: "300px" }}
                 />
                 <MDBCardBody>
                   <MDBCardText className="describe text-start">
-                    Mach I (II, III, IV) Kawasaki, Ducati (Mach 1S){" "}
+                    MT-15 YAMAHA (BEAST)
                   </MDBCardText>
                   <MDBCardTitle className="text-start">
                     Price:Nrs 100000
@@ -74,7 +77,7 @@ const MayLike = () => {
                   <div className="card-between-may">
                     <p>$ Negotiable</p>
                     <p className="location-may">
-                      <ImLocation2 /> Pokhara
+                      <ImLocation2 /> Chitwan
                     </p>
                   </div>
                 </MDBCardBody>
@@ -88,14 +91,14 @@ const MayLike = () => {
                 style={{ maxWidth: "25rem" }}
               >
                 <MDBCardImage
-                  src={bike}
+                  src={cross}
                   alt="bike image"
                   position="top"
-                  style={{ maxWidth: "100%", height: "180px" }}
+                  style={{ maxWidth: "100%", height: "300px" }}
                 />
                 <MDBCardBody>
                   <MDBCardText className="describe text-start">
-                    Mach I (II, III, IV) Kawasaki, Ducati (Mach 1S){" "}
+                    CROSSFIRE GR7
                   </MDBCardText>
                   <MDBCardTitle className="text-start">
                     Price:Nrs 100000
@@ -103,7 +106,7 @@ const MayLike = () => {
                   <div className="card-between-may">
                     <p>$ Negotiable</p>
                     <p className="location-may">
-                      <ImLocation2 /> Pokhara
+                      <ImLocation2 /> Bagmati
                     </p>
                   </div>
                 </MDBCardBody>

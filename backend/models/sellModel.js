@@ -17,6 +17,41 @@ const sellSchema = mongoose.Schema(
             required:[true, 'Please add a price '],
         },
 
+        brandName:{
+            type:String,
+            required:[true, 'Please enter brand name'],
+        },
+
+        kmRun: {
+            type:Number,
+            required:[true, 'Please enter km run'],
+        },
+
+        mileage: {
+            type:Number,
+            required:[true, 'Please enter mileage'],
+        },
+
+        engine:{
+            type:Number,
+            required:[true, 'Please enter engine displacement'],
+        },
+
+        pradesh: {
+            type:String,
+            required:[true, 'Please enter province or zone '],
+        },
+
+        lotNumber:{
+            type:Number,
+            required:[true, 'Please enter lot number '],
+        },
+
+        makeYear:{
+            type:Number,
+            required:[true, 'Please enter make year'],   
+        },
+
         image:{
             type: String
         }

@@ -21,7 +21,8 @@ const SearchBike = ({bikes,bike, price, _id,image}) => {
 
   return (
     <>
-    <MDBCardGroup>
+    <div className='bikes-card'>
+    <MDBCardGroup className='bikes-sectionss'>
             <MDBCard className="h-100 mt-20 d-sm-flex" style={{ maxWidth: "20rem" }}>
               <MDBCardImage
                src={`http://localhost:8000/uploads/` + image}
@@ -50,6 +51,7 @@ const SearchBike = ({bikes,bike, price, _id,image}) => {
         </MDBCardBody>
       </MDBCard>
     </MDBCardGroup>
+    </div>
     </>
   )
 }

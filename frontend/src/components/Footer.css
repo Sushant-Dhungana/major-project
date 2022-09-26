@@ -1,5 +1,4 @@
 .footer_last {
-    margin-top: 3%;
     background-color: #0A142F;
     color: #ffff;
     bottom: 0;    
@@ -90,5 +89,12 @@
     }
     .footer-icons {
         text-align: center !important;
+    }
+    .footer-para p {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .footer_last {
+        padding-bottom: 4%;
     }
 }

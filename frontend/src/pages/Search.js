@@ -5,15 +5,21 @@ import { useDispatch, useSelector } from "react-redux";
 import { getBikes } from "../redux/features/sellSlice";
 import Spinner from "../components/Spinner";
 import "./Home.css";
-
+import homeimage from "../pictures/homeimage.png";
 import { AiFillApple, AiOutlineSearch } from "react-icons/ai";
-import { GoSettings } from "react-icons/go";
 import cb from "../pictures/cb.jpeg";
 import bikeimage from "../pictures/bike.png";
 import { ImgOverlay } from "image-overlay-react";
 import "image-overlay-react/dist/index.css";
 import MayLike from "../components/MayLike";
 import SearchBike from "../components/SearchBike";
+import { Link } from "react-router-dom";
+import {
+  SiHonda,
+  SiYamahamotorcorporation,
+  SiKtm,
+  SiRollsroyce,
+} from "react-icons/si";
 
 const Search = () => {
   const { bikes, userBikes, loading } = useSelector((state) => ({
@@ -58,16 +64,41 @@ const Search = () => {
       </div>
       <div className="container play">
         <div className="row">
+          <div className="col-md-12">
+            <h4>Top selling Brand</h4>
+          </div>
           <div className="col-md-3">
-            <p>Top selling Brand</p>
             <div className="play-store">
               <div className="play-main-section">
                 <div className="icon">
-                  <AiFillApple size={70} color="white" />
-                  <p>
-                    Download on the <br />
-                    <span>App Store</span>
-                  </p>
+                  <SiHonda size={90} color="#CC0000" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-3">
+            <div className="play-store">
+              <div className="play-main-section">
+                <div className="icon">
+                  <SiYamahamotorcorporation size={90} color="#3839F5" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-3">
+            <div className="play-store">
+              <div className="play-main-section">
+                <div className="icon">
+                  <SiKtm size={90} color="#F2771A" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-3">
+            <div className="play-store">
+              <div className="play-main-section">
+                <div className="icon">
+                  <SiRollsroyce size={90} color="#01040B" />
                 </div>
               </div>
             </div>
@@ -196,6 +227,10 @@ const Search = () => {
           </div>
         </div>
       </div>
+      <div className="women-image">
+      <Link to="/predictnow">
+    <img src={homeimage} alt="homeimage" className="homeimage" /></Link>
+    </div>
       <MayLike />
     </div>
   );

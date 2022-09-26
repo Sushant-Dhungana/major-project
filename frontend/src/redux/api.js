@@ -35,3 +35,4 @@ export const updateBike = (updatedBikeData, id) =>
   API.put(`/sell/${id}`, updatedBikeData);
 export const getBikesByUser = (userId) => API.get(`/sell/${userId}`);
 export const getBikesBySearch = (searchQuery) => API.get(`/sell/search?searchQuery=${searchQuery}`);
+export const predictPrice = (predictData) => API.post(`/predict`, predictData);

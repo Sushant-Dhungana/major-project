@@ -4,6 +4,7 @@ const asyncHandler = require('express-async-handler')
 const Sell = require('./models/sellModel')
 const authRouter = require('./routes/userRoutes.js')
 const sellRouter = require('./routes/sellRoutes.js')
+const predictRouter = require('./routes/predictRoutes.js')
 const {errorHandler} = require('./middleware/errorHandler')
 const connectDB = require('./config/db')
 const colors = require('colors')
@@ -17,8 +18,6 @@ app.use(cors({
 dotenv.config()
 
 app.use('/uploads', express.static('uploads'))
-
-
 const port = process.env.PORT
 
 connectDB()
@@ -28,6 +27,7 @@ app.use(express.urlencoded({extend:false}))
 
 app.use('/', authRouter)
 app.use('/sell', sellRouter)
+app.use('/', predictRouter)
 
 //homepage
 // public

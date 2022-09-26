@@ -36,10 +36,21 @@ const setAd = asyncHandler(async (req, res) => {
 
     // for single image
     const ad = await Sell.create({
+        // bike: req.body.bike,
+        // price: req.body.price,
+        // user: req.user.id,
+        // image: req.file.filename,
         bike: req.body.bike,
         price: req.body.price,
+        brandName:req.body.brandName,
+        kmRun: req.body.kmRun,
+        mileage: req.body.mileage,
+        engine: req.body.engine,
+        pradesh: req.body.pradesh,
+        lotNumber: req.body.lotNumber,
+        makeYear: req.body.makeYear,
         user: req.user.id,
-        image: req.file.filename,
+        image: req.file.filename
 
     })
   

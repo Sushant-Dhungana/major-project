@@ -21,6 +21,21 @@ a.navbar-brand h2 {
     color: #4993FA;
     font-family: Rammetto One, cursive;
 }
+/* .card {
+  box-shadow: rgba(100, 100, 111, 0.15) 0px 7px 29px 0px !important;
+}
+.card:hover {
+  box-shadow: rgba(100, 100, 111, 0.6) 0px 7px 29px 0px !important;
+} */
+
+.bikes-card {
+  box-shadow: rgba(100, 100, 111, 0.15) 0px 7px 29px 0px !important;
+
+}
+.bikes-sectionss:hover {
+  box-shadow: rgba(100, 100, 111, 0.6) 0px 7px 29px 0px !important;
+  border-radius: 5px;
+}
 
 .card-between {
   padding-top:6%;
@@ -66,6 +81,7 @@ a.navbar-brand h2 {
   height: 400px;
   width: 400px;
   border-radius: 15px;
+  object-fit: contain;
 }
 
 .single-content {
@@ -103,12 +119,13 @@ a.navbar-brand h2 {
   text-align: center;
   margin-top: 5%;
   color: #ffff;
+  margin-bottom: 5%;
 }
 
 .contact-seller button {
   height: 50px;
   width: 200px;
-  border-radius: 10px;
+  border-radius: 8px;
   background-color: #4993FA;
   font-weight: bold;
   font-size: 20px;
@@ -121,4 +138,58 @@ a.navbar-brand h2 {
 
 .search {
   margin-top: 6%;
+}
+
+.image-upload input  {
+  border: none !important;
+}
+
+input[type=file]::file-selector-button {
+  padding: .2em .4em;
+  border-radius: .2em;
+  transition: 1s;
+  background-color: rgba(69, 168, 255, 0.8);
+  border: none;
+  width: 150px;
+  color: black !important;
+}
+
+input[type=file]::file-selector-button:hover {
+  background-color: #4993FA;;
+}
+label.form-label {
+  float: left;
+  color: #040404;
+}
+
+h5.add-update {
+  color: #040404;
+  font-weight: bold;
+  margin-top:4%;
+}
+.addbike {
+  background: linear-gradient(
+    rgba(30, 30, 30, 0.5),
+    rgba(31, 31, 31, 0.5)
+  ), url("./pictures/collection.webp");
+background-attachment: fixed;
+background-size: 100% 100vh;
+background-position: fixed;
+background-repeat: no-repeat;
+object-fit: cover;
+margin-top: -1.3%;
+margin-bottom: 0 auto;
+}
+.addbike .container {
+  margin-top: 10%;
+  opacity: 0.8;
+}
+
+.addbike .container:hover {
+  opacity: 0.9;
+}
+@media (max-width: 1000px) {
+  .single-image img {
+    width: 350px;
+  }
 }

@@ -130,7 +130,7 @@ const Register = () => {
                 <div className="signin-link">
                 <MDBCardFooter>
                     <Link to="/login">
-                    <p>already have an account?<span>Sign In</span> </p>
+                    <p>Already have an account?<span>Sign In</span> </p>
                     </Link>
                     </MDBCardFooter>
                     </div>

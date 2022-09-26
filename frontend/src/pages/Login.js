@@ -49,7 +49,7 @@ const Login = () => {
         <div className="row">
           <div className="col-md-6 m-auto">
             <div className="login-card">
-            <MDBCard alignment="left" className="card">
+            <MDBCard alignment="left" className="card-login">
               <MDBCardBody>
                 <MDBValidation
                   onSubmit={handleSubmit}

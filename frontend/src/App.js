@@ -14,9 +14,9 @@ import SingleBike from "./pages/SingleBike";
 import PrivateRoute from "./components/PrivateRoute";
 import Footer from "./components/Footer";
 import NotFound from "./pages/NotFound";
-import ShowMultiStep from "./multistepform/ShowMultiStep";
-import StepContext from "./StepContext";
+import PredictNow from "./pages/PredictNow";
 import Search from "./pages/Search";
+import ScrollToTop from "./components/ScrolltoTop";
 
 // import NoAuthHome from './pages/NoAuthHome';
 // import HomePageSingleBike from './pages/HomePageSingleBike';
@@ -32,6 +32,7 @@ function App() {
   return (
     <BrowserRouter>
       <>
+      <ScrollToTop/>
         <Header />
         <ToastContainer />
         <Routes>
@@ -64,10 +65,7 @@ function App() {
             }
           />
           <Route path="/sell/:id" element={<SingleBike />} />
-          <Route path="/sell/predictnow" element={
-          <StepContext>
-            <ShowMultiStep/>
-          </StepContext>} />
+          <Route path="/predictnow" element={<PredictNow />}/>
           <Route path="*" element={<NotFound/>} />
         </Routes>
       <Footer/>

@@ -105,7 +105,7 @@ const Header = () => {
               </MDBNavbarItem>
             )}
             <MDBNavbarItem>
-                  <MDBNavbarLink href="/sell/predictnow" className="btn-predict">
+                  <MDBNavbarLink href="/predictnow" className="btn-predict">
                     <p className="header-text"> Predict Now</p>
                   </MDBNavbarLink>
                 </MDBNavbarItem>

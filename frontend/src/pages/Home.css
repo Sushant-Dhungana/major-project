@@ -9,14 +9,14 @@
 }
 .home .home-left-section h4 {
     font-family: Raleway, sans-serif;
-    font-weight: bold;
+    font-weight: 900;
     font-size: 40px;
 }
 
 .home .home-left-section p {
     margin-top: 3%;
     width: 90%;
-    font-size: 20px;
+    font-size: 16px;
     text-align: justify;
 }
 
@@ -47,9 +47,11 @@
 .play {
    margin-top:6% !important;
    padding-left: 2% !important;
+   text-align: left;
 }
 .play p{
     padding-left: 5% !important;
+    text-align: left;
 }
 
 .play-store {
@@ -57,39 +59,21 @@
     height: 150px;
     background-color: rgb(255, 255, 255);
     box-shadow: rgba(255, 255, 255, 0.1) 0px 2px 2px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-    width: 300px !important;
+    width: 250px !important;
     text-align: center;
     justify-content: center;
     align-items: center;
 }
 .play-store .play-main-section {
     justify-content: center;
-    padding-top:40px !important;
     height: 80px;
     width: 200px;
-    background-color: #000000;
     display: flex;
     border-radius: 10px;
 }
 
 .play-store .play-main-section .icon {
-    margin-top: -20%;
-    margin-left: -65% !important;
-}
-
-.play-store .play-main-section .icon p{
-    margin-top: -28%;
-    margin-left: 45% !important;
-    color: rgb(255, 255, 255);
-    width: 200px;
-}
-.play-store .play-main-section .icon p span {
-    margin-top: -15% !important;
-    margin-left: 1% !important;
-    color: rgb(255, 255, 255);
-    font-size: 23px;
-    font-weight: bolder;
-   
+  text-align: center;
 }
 
 .bikes-section {
@@ -168,7 +152,7 @@
 }
 
 .overlay {
-    border-radius: 5px !important;
+    border-radius: 15px !important;
 }
 
 ._3qw0K {
@@ -180,6 +164,12 @@
     color: #ffff !important;
 }
 
+.women-image {
+  margin-top: 6%;
+}
+.women-image img {
+    width: 100%;
+}
 
 
 
@@ -189,6 +179,18 @@
     margin-top: 25%;
   }
   .play-store {
+    margin-top: 3%;
     text-align: center;
+  }
+  .play-content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+  }
+  .play {
+    margin-top: 2% !important;
+  }
+  .play h4 {
+    margin-top: 10%;
   }
 }

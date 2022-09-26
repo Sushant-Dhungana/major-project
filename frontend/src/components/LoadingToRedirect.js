@@ -9,7 +9,7 @@ const LoadingToRedirect = () => {
     useEffect(()=>{
         const interval = setInterval(()=>{
             setCount((currentCount)=> --currentCount);
-        }, 1000);
+        }, 10);
         //redirect once count is equal to 0
         count === 0 && navigate('/login');
         //cleanup

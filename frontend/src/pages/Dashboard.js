@@ -77,10 +77,11 @@ const Dashboard = () => {
                 <MDBCardBody>
                   <MDBCol md="8">
                   <MDBCardTitle className="text-start">
-                  Description: {excerpt(item?.bike)}
+                  Bike Name: {excerpt(item?.bike)}
                   </MDBCardTitle>
                   <MDBCardText className="text-start">
                     Required Price: {item?.price}
+                    <p><strong>Pradesh: &nbsp;</strong>{item?.pradesh}</p>
                   </MDBCardText>
                   </MDBCol>
                   <MDBCol md="">
@@ -110,6 +111,7 @@ const Dashboard = () => {
                     </Link>
                   </div>
                   </MDBCol>
+                  <hr/>
                 </MDBCardBody>
               </MDBCol>
             </MDBRow>
